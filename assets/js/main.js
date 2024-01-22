@@ -11,11 +11,13 @@ menu.addEventListener('click', () => {
     setTimeout(() => {
         cross.classList.add('filter');
     }, 600);
+    document.body.style.overflow = 'hidden';
 });
 close.addEventListener('click', () => {
     menu2.classList.add('trans');
     menu2.classList.remove('trans2');
     cross.classList.remove('filter');
+    document.body.style.overflow = 'visible';
     setTimeout(() => {
         menu2.classList.add('d-none');
     }, 800);
