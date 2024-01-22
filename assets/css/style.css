@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: black;
+  background-color: #a6fff8;
+}
+
 .nav {
   background-color: #2b2b2b;
 }
@@ -56,10 +61,25 @@
 }
 .real-menu {
   width: 40vw;
+  height: 100vh;
+}
+
+.new {
+  width: 30vw;
+  background-color: #f5f5f5;
+}
+
+.new2 {
+  width: 80vw;
+  background-color: #f5f5f5;
 }
 
 .cross {
   width: 60vw;
+}
+
+.cross2 {
+  width: 30vw;
 }
 
 .filter {
@@ -75,13 +95,13 @@
   color: #ce0000;
 }
 
-.bi-search {
+.search {
   background-color: #808080;
   transition: 0.3s;
   border-radius: 10px;
   padding: 0 10px;
 }
-.bi-search:hover {
+.search:hover {
   background-color: #aaaaaa;
 }
 
@@ -119,6 +139,57 @@
 }
 .link:hover .bi-arrow-right {
   transform: translateX(15px);
+}
+
+.scroll {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.ani {
+  animation: opacity 0.8s 1 alternate ease-in-out;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.icon {
+  background-color: #d8efef;
+  padding: 5px 8px;
+  border-radius: 7px;
+}
+
+.text-icon {
+  color: #707070;
+}
+
+.hover .photo {
+  height: 20vh;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.hover .buy {
+  text-decoration: none;
+}
+.hover:hover .photo {
+  transform: scale(1);
+}
+.hover:hover .buy {
+  text-decoration: underline;
+}
+
+.free {
+  font-size: 10px;
+  padding: 0 7px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
