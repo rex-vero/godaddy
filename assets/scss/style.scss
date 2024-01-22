@@ -27,11 +27,11 @@
 
 .trans {
     transform: translateX(-100%);
-    animation: go .3s 1 alternate ease-in-out;
+    animation: go .6s 1 alternate ease-in-out;
 }
 
 .trans2 {
-    animation: trans .3s 1 alternate ease-in-out;
+    animation: trans .6s 1 alternate ease-in-out;
 }
 
 @keyframes trans {
@@ -47,10 +47,16 @@
 @keyframes go {
     0% {
         transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
     }
 
     100% {
         transform: translateX(-100%);
+        opacity: 0;
     }
 }
 
