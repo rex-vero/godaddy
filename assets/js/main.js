@@ -10,7 +10,7 @@ menu.addEventListener('click', () => {
     menu2.classList.add('trans2');
     setTimeout(() => {
         cross.classList.add('filter');
-    }, 550);
+    }, 600);
 });
 close.addEventListener('click', () => {
     menu2.classList.add('trans');
