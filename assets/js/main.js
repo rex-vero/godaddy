@@ -53,17 +53,17 @@ menu.addEventListener('click', () => {
     setTimeout(() => {
         cross.classList.add('filter');
     }, 600);
-    body.style.overflow = 'hidden';
+    body.style.overflowY = 'hidden';
 });
 smMenu.addEventListener('click', () => {
     menu3.classList.remove('d-none');
     menu3.style.transition = '1s';
     menu3.classList.remove('trans');
     menu3.classList.add('trans2');
+    body.style.overflowY = 'hidden';
     setTimeout(() => {
         cross2.classList.add('filter');
     }, 600);
-    body.style.overflow = 'hidden';
 });
 close.addEventListener('click', () => {
     menu2.classList.add('trans');
