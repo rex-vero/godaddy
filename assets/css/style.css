@@ -38,6 +38,15 @@
   animation: trans 0.6s 1 alternate ease-in-out;
 }
 
+.trans3 {
+  transform: translateY(-1000%);
+  animation: go2 0.6s 1 alternate ease-in-out;
+}
+
+.trans4 {
+  animation: trans2 0.6s 1 alternate ease-in-out;
+}
+
 @keyframes trans {
   0% {
     transform: translateX(-100%);
@@ -59,6 +68,35 @@
     opacity: 0;
   }
 }
+@keyframes trans2 {
+  0% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes go2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-1000%);
+    opacity: 0;
+  }
+}
+.list1 {
+  display: block;
+}
+
+.list2 {
+  display: none;
+}
+
 .real-menu {
   width: 40vw;
 }
@@ -81,6 +119,14 @@
   width: 30vw;
 }
 
+.searcher {
+  height: 70vh;
+}
+
+.down {
+  height: 30vh;
+}
+
 .filter {
   background-color: transparent;
   backdrop-filter: blur(2px) brightness(50%);
@@ -95,13 +141,13 @@
 }
 
 .search {
-  background-color: #808080;
+  background-color: #444444;
   transition: 0.3s;
   border-radius: 10px;
   padding: 0 10px;
 }
 .search:hover {
-  background-color: #aaaaaa;
+  background-color: #7e7d7d;
 }
 
 @media only screen and (max-width: 990px) {
@@ -124,6 +170,21 @@
   }
   .cross {
     width: 20vw;
+  }
+  .list1 {
+    display: none;
+  }
+  .list2 {
+    display: block;
+  }
+  .searcher {
+    height: 100vh;
+  }
+  .down {
+    height: 0vh;
+  }
+  .input1 {
+    font-size: 15px !important;
   }
 }
 .logo-menu {
@@ -194,6 +255,64 @@
   font-size: 10px;
   padding: 0 7px;
   border-radius: 5px;
+}
+
+.upper {
+  width: 100vw;
+  height: 10vh;
+  inset: 0;
+  position: absolute;
+  z-index: 3;
+}
+
+.bor {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+.bor:hover, .bor:focus {
+  border: 2px solid #727373;
+}
+
+.input1 {
+  border: none;
+  outline: none;
+  background-color: #d4dbe0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 8px 0;
+  font-size: 20px;
+}
+
+.search-btn {
+  transition: 0.5s;
+  border: none;
+  background-color: #d4dbe0;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 8px 4px;
+}
+
+.search-btn2 {
+  transition: 0.5s;
+  border: none;
+  background-color: #09757a;
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 8px 4px;
+}
+
+.bi-x {
+  color: #000000;
+  transition: 0.4s;
+}
+.bi-x:hover {
+  color: #ce0000;
+}
+
+.text-search {
+  color: #4b4b4b;
+  border-bottom: 2px solid #ebebeb;
 }
 
 /*# sourceMappingURL=style.css.map */

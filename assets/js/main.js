@@ -1,8 +1,5 @@
-const body = document.getElementById('body');
 const menu = document.getElementById('menu');
 const smMenu = document.getElementById('sm-menu');
-const menu2 = document.getElementById('menu2');
-const menu3 = document.getElementById('menu3');
 const realMenu = document.getElementById('real-menu');
 const cross = document.getElementById('cross');
 const cross2 = document.getElementById('cross2');
@@ -45,7 +42,12 @@ const ani5 = document.getElementById('ani5');
 const ani6 = document.getElementById('ani6');
 const ani7 = document.getElementById('ani7');
 const ani8 = document.getElementById('ani8');
+const search = document.getElementById('search');
+const closer = document.getElementById('closer');
+const input = document.getElementById('input');
 menu.addEventListener('click', () => {
+    input
+    const menu2 = document.getElementById('menu2');
     menu2.classList.remove('d-none');
     menu2.style.transition = '1s';
     menu2.classList.remove('trans');
@@ -53,37 +55,41 @@ menu.addEventListener('click', () => {
     setTimeout(() => {
         cross.classList.add('filter');
     }, 600);
-    body.style.overflowY = 'hidden';
+    document.body.style.overflow = 'hidden';
 });
 smMenu.addEventListener('click', () => {
+    const menu3 = document.getElementById('menu3');
     menu3.classList.remove('d-none');
     menu3.style.transition = '1s';
     menu3.classList.remove('trans');
     menu3.classList.add('trans2');
-    body.style.overflowY = 'hidden';
+    document.body.style.overflow = 'hidden';
     setTimeout(() => {
         cross2.classList.add('filter');
     }, 600);
 });
 close.addEventListener('click', () => {
+    const menu2 = document.getElementById('menu2');
     menu2.classList.add('trans');
     menu2.classList.remove('trans2');
     cross.classList.remove('filter');
-    body.style.overflowY = 'auto';
+    document.body.style.overflow = 'auto';
     setTimeout(() => {
         menu2.classList.add('d-none');
     }, 800);
 });
 close2.addEventListener('click', () => {
+    const menu3 = document.getElementById('menu3');
     menu3.classList.add('trans');
     menu3.classList.remove('trans2');
     cross2.classList.remove('filter');
-    body.style.overflowY = 'auto';
+    document.body.style.overflow = 'auto';
     setTimeout(() => {
         menu3.classList.add('d-none');
     }, 800);
 });
 domains.addEventListener('click', () => {
+    const ani = document.getElementById('ani');
     domainsArrow.classList.add('d-none');
     cross.classList.remove('cross');
     cross.classList.add('cross2');
@@ -104,6 +110,7 @@ domains2.addEventListener('click', () => {
     ani2.classList.add('ani2');
 });
 back.addEventListener('click', () => {
+    const ani = document.getElementById('ani');
     domainsArrow.classList.remove('d-none');
     cross.classList.add('cross');
     cross.classList.remove('cross2');
@@ -210,4 +217,40 @@ back8.addEventListener('click', () => {
     hide.classList.remove('d-none');
     newMenu8.classList.add('d-none');
     ani8.classList.remove('ani');
+});
+search.addEventListener('click', () => {
+    const upper = document.getElementById('upper');
+    const down = document.getElementById('down');
+    upper.classList.remove('d-none');
+    upper.style.transition = '1s';
+    upper.classList.remove('trans3');
+    upper.classList.add('trans4');
+    setTimeout(() => {
+        down.classList.add('filter');
+    }, 600);
+    document.body.style.overflow = 'hidden';
+})
+closer.addEventListener('click', () => {
+    const upper = document.getElementById('upper');
+    const down = document.getElementById('down');
+    upper.classList.add('trans3');
+    upper.classList.remove('trans4');
+    down.classList.remove('filter');
+    input.value = '';
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
+    setTimeout(() => {
+        upper.classList.add('d-none');
+    }, 800);
+});
+input.addEventListener('input', () => {
+    const searchBtn = document.getElementById('search-btn');
+    if (input.value === '') {
+        searchBtn.classList.add('search-btn');
+        searchBtn.classList.remove('search-btn2');
+    } else {
+        searchBtn.classList.remove('search-btn');
+        searchBtn.classList.add('search-btn2');
+    }
+
 });
