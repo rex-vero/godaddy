@@ -142,7 +142,12 @@
 
 .scroll {
   overflow-y: auto;
-  height: 87vh;
+  height: 90vh;
+}
+
+.scroll2 {
+  overflow-y: auto;
+  height: 80vh;
 }
 
 .ani {

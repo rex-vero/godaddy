@@ -159,8 +159,14 @@
 
 .scroll {
     overflow-y: auto;
-    height: 87vh;
+    height: 90vh;
 }
+
+.scroll2 {
+    overflow-y: auto;
+    height: 80vh;
+}
+
 
 .ani {
     animation: opacity 0.8s 1 alternate ease-in-out;
