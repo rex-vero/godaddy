@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/font/bootstrap-icons.css ">
     <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="./assets/image/godaddy-logo.png" type="image/x-icon">
+    <link rel="icon" href="./assets/image/godaddy-logo.png">
     <title>GoDaddy</title>
 </head>
 
@@ -17,15 +17,38 @@
     <nav class="nav">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center text-white fs-3">
-                <i id="menu" class="bi d-none d-lg-block d-xl-none fs-2 bi-list"></i>
-                <i id="sm-menu" class="bi d-lg-none d-xl-block fs-2 me-4 bi-list"></i>
+                <i id="menu" class="bi list1 fs-2 bi-list"></i>
+                <i id="sm-menu" class="bi list2 fs-2 me-4 bi-list"></i>
                 <a class="d-flex align-items-center text-decoration-none text-white" href="#">
                     <img src="./assets/image/godaddy-logo.png" class="img-fluid ms-3 logo">
                     <p class="pt-3 ms-2 text fw-bold">GoDaddy</p>
                 </a>
             </div>
             <div class="text-white gap-3 d-flex fs-4 me-3">
-                <i class="bi search bi-search"></i>
+                <i id="search" class="bi search bi-search"></i>
+                <div class="upper d-none trans2" id="upper">
+                    <div id="searcher" class="container-fluid searcher d-flex flex-column bg-white">
+                        <div class="d-flex mt-4 justify-content-around">
+                            <div class="d-flex bor w-100">
+                                <button id="search-btn" class="search-btn"><i class="bi px-2 bi-search"></i></button>
+                                <input id="input" class="w-100 input1" placeholder="Search for a GoDaddy product" type="text">
+                            </div>
+                            <i id="closer" class="bi bi-x align-self-center ms-2 fs-2"></i>
+                        </div>
+                        <div class="mt-3">
+                            <p class="text-muted fs-6 ms-4">POPULAR SEARCH TERMS</p>
+                            <div class="mt-3 d-flex flex-column fs-5 ms-4">
+                                <a class="text-search me-4 my-2 text-decoration-none" href="#">website builder</a>
+                                <a class="text-search me-4 my-2 text-decoration-none" href="#">whois</a>
+                                <a class="text-search me-4 my-2 text-decoration-none" href="#">email</a>
+                                <a class="text-search me-4 my-2 text-decoration-none" href="#">domain</a>
+                                <a class="text-search me-4 my-2 text-decoration-none" href="#">payments</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="down" class="down">
+                    </div>
+                </div>
                 <i class="bi bi-question-circle"></i>
                 <i class="bi bi-person"></i>
                 <i title="Checkout Now" class="bi bi-cart2"></i>
