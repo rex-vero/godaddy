@@ -157,6 +157,12 @@
   .cross {
     width: 30vw;
   }
+  .list1 {
+    display: none;
+  }
+  .list2 {
+    display: block;
+  }
 }
 @media only screen and (max-width: 770px) {
   .nav {
@@ -170,12 +176,6 @@
   }
   .cross {
     width: 20vw;
-  }
-  .list1 {
-    display: none;
-  }
-  .list2 {
-    display: block;
   }
   .searcher {
     height: 100vh;
