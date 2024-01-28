@@ -348,12 +348,54 @@
   display: none;
 }
 
+.bg-card {
+  background-color: #d8efef;
+  border-radius: 10px;
+}
+
+.black-btn {
+  background-color: #111111;
+  border: 1px solid #111111;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.black-btn:hover {
+  transform: scale(1.03);
+  background-color: transparent;
+  color: #111111;
+}
+
+.buy {
+  text-decoration: none;
+}
+.buy:hover {
+  text-decoration: underline;
+}
+
+.bg-img {
+  background: url("../image/occasio-responsive-layout.png") no-repeat center;
+  background-size: 80vh;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  width: 75vw;
+}
+
 @media only screen and (max-width: 990px) {
   .search-able1 {
     display: none;
   }
   .search-able2 {
     display: block;
+  }
+  .bg-img {
+    width: 97vw;
+    background: none;
+    background-color: #f5f5f5;
+  }
+  .bg-card {
+    width: 97vw;
   }
 }
 
