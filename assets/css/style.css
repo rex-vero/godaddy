@@ -170,6 +170,16 @@
     display: block;
   }
 }
+.input1 {
+  border: none;
+  outline: none;
+  background-color: #d4dbe0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 8px 0;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 770px) {
   .nav {
     padding: 10px 0;
@@ -190,7 +200,7 @@
     height: 0vh;
   }
   .input1 {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 }
 .logo-menu {
@@ -277,16 +287,6 @@
 }
 .bor:hover, .bor:focus {
   border: 2px solid #727373;
-}
-
-.input1 {
-  border: none;
-  outline: none;
-  background-color: #d4dbe0;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
-  padding: 8px 0;
-  font-size: 20px;
 }
 
 .search-btn {
