@@ -68,6 +68,31 @@
     width: 75vw;
 }
 
+.re-btn {
+    padding: 9px 15px;
+    color: white;
+    background-color: #111111;
+    border: 1px solid #111111;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.re-btn2 {
+    padding: 9px 15px;
+    color: #111111;
+    background-color: transparent;
+    border: 1px solid #d6d6d6;
+    transition: .3s;
+
+    &:hover {
+        border: 1px solid #111111;
+        transform: scale(1.03);
+    }
+}
+
 @media only screen and (max-width:990px) {
 
     .search-able1 {
@@ -86,5 +111,11 @@
 
     .bg-card {
         width: 97vw;
+    }
+
+    .scroller {
+        width: 95vw;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }

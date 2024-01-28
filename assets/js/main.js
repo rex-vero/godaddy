@@ -3,11 +3,13 @@ const realMenu = document.getElementById('real-menu');
 const close = document.querySelectorAll('.bi-x-lg');
 const links = document.querySelectorAll('.links');
 const links2 = document.querySelectorAll('.links2');
+const newMenu = document.querySelectorAll('.new2');
 const webArrow = document.getElementById('web-arrow');
 const emailArrow = document.getElementById('email-arrow');
 const domainsArrow = document.getElementById('domains-arrow');
 const commerceArrow = document.getElementById('commerce-arrow');
 const back = document.querySelectorAll('.odd');
+const btns = document.querySelectorAll('.btns');
 const back2 = document.querySelectorAll('.even');
 const search = document.getElementById('search');
 const closer = document.getElementById('closer');
@@ -127,51 +129,54 @@ for (let i = 0; i < links.length; i++) {
         cross.classList.add('cross2');
     });
 }
-for (let i = 0; i < links2.length; i++) {
-    const hide = document.getElementById('hide');
-    const newMenu = document.querySelectorAll('.new2');
+links2[0].addEventListener('click', () => {
     const ani = document.querySelectorAll('.scroll2');
-    links2[0].addEventListener('click', () => {
-        hide.classList.add('d-none');
-        newMenu[0].classList.remove('d-none');
-        newMenu[1].classList.add('d-none');
-        newMenu[2].classList.add('d-none');
-        newMenu[3].classList.add('d-none');
-        for (let i = 0; i < ani.length; i++) {
-            ani[i].classList.add('ani');
-        }
-    });
-    links2[1].addEventListener('click', () => {
-        hide.classList.add('d-none');
-        newMenu[0].classList.add('d-none');
-        newMenu[1].classList.remove('d-none');
-        newMenu[2].classList.add('d-none');
-        newMenu[3].classList.add('d-none');
-        for (let i = 0; i < ani.length; i++) {
-            ani[i].classList.add('ani');
-        }
-    });
-    links2[2].addEventListener('click', () => {
-        hide.classList.add('d-none');
-        newMenu[0].classList.add('d-none');
-        newMenu[1].classList.add('d-none');
-        newMenu[2].classList.remove('d-none');
-        newMenu[3].classList.add('d-none');
-        for (let i = 0; i < ani.length; i++) {
-            ani[i].classList.add('ani');
-        }
-    });
-    links2[3].addEventListener('click', () => {
-        hide.classList.add('d-none');
-        newMenu[0].classList.add('d-none');
-        newMenu[1].classList.add('d-none');
-        newMenu[2].classList.add('d-none');
-        newMenu[3].classList.remove('d-none');
-        for (let i = 0; i < ani.length; i++) {
-            ani[i].classList.add('ani');
-        }
-    });
-}
+    const hide = document.getElementById('hide');
+    hide.classList.add('d-none');
+    newMenu[0].classList.remove('d-none');
+    newMenu[1].classList.add('d-none');
+    newMenu[2].classList.add('d-none');
+    newMenu[3].classList.add('d-none');
+    for (let i = 0; i < ani.length; i++) {
+        ani[i].classList.add('ani');
+    }
+});
+links2[1].addEventListener('click', () => {
+    const ani = document.querySelectorAll('.scroll2');
+    const hide = document.getElementById('hide');
+    hide.classList.add('d-none');
+    newMenu[0].classList.add('d-none');
+    newMenu[1].classList.remove('d-none');
+    newMenu[2].classList.add('d-none');
+    newMenu[3].classList.add('d-none');
+    for (let i = 0; i < ani.length; i++) {
+        ani[i].classList.add('ani');
+    }
+});
+links2[2].addEventListener('click', () => {
+    const ani = document.querySelectorAll('.scroll2');
+    const hide = document.getElementById('hide');
+    hide.classList.add('d-none');
+    newMenu[0].classList.add('d-none');
+    newMenu[1].classList.add('d-none');
+    newMenu[2].classList.remove('d-none');
+    newMenu[3].classList.add('d-none');
+    for (let i = 0; i < ani.length; i++) {
+        ani[i].classList.add('ani');
+    }
+});
+links2[3].addEventListener('click', () => {
+    const ani = document.querySelectorAll('.scroll2');
+    const hide = document.getElementById('hide');
+    hide.classList.add('d-none');
+    newMenu[0].classList.add('d-none');
+    newMenu[1].classList.add('d-none');
+    newMenu[2].classList.add('d-none');
+    newMenu[3].classList.remove('d-none');
+    for (let i = 0; i < ani.length; i++) {
+        ani[i].classList.add('ani');
+    }
+});
 for (let i = 0; i < back.length; i++) {
     back[i].addEventListener('click', () => {
         const cross = document.getElementById('cross');
@@ -239,4 +244,32 @@ input.addEventListener('input', () => {
         searchBtn.classList.remove('search-btn');
         searchBtn.classList.add('search-btn2');
     }
+});
+btns[0].addEventListener('click', () => {
+    btns[0].classList.add('re-btn');
+    btns[0].classList.remove('re-btn2');
+    btns[1].classList.add('re-btn2');
+    btns[2].classList.add('re-btn2');
+    btns[3].classList.add('re-btn2');
+});
+btns[1].addEventListener('click', () => {
+    btns[0].classList.add('re-btn2');
+    btns[1].classList.add('re-btn');
+    btns[1].classList.remove('re-btn2');
+    btns[2].classList.add('re-btn2');
+    btns[3].classList.add('re-btn2');
+});
+btns[2].addEventListener('click', () => {
+    btns[0].classList.add('re-btn2');
+    btns[1].classList.add('re-btn2');
+    btns[2].classList.add('re-btn');
+    btns[2].classList.remove('re-btn2');
+    btns[3].classList.add('re-btn2');
+});
+btns[3].addEventListener('click', () => {
+    btns[0].classList.add('re-btn2');
+    btns[1].classList.add('re-btn2');
+    btns[2].classList.add('re-btn2');
+    btns[3].classList.add('re-btn');
+    btns[3].classList.remove('re-btn2');
 });
