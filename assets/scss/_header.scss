@@ -110,7 +110,9 @@
     .bg-card {
         width: 97vw;
     }
+}
 
+@media only screen and (max-width:700px) {
     .scroller {
         width: 95vw;
         overflow-x: auto;
