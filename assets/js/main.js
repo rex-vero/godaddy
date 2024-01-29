@@ -246,6 +246,20 @@ input.addEventListener('input', () => {
     }
 });
 btns[0].addEventListener('click', () => {
+    const handle = document.getElementById('handle');
+    handle.innerHTML = `<a href="#" class="coffee shadow-div text-decoration-none text-black d-flex align-items-end">
+    <p class="fs-4 fw-bolder ms-2">Domains</p>
+</a>
+<div class="d-flex justify-content-between mt-1">
+    <a href="#"
+        class="down-to shadow-div text-black text-decoration-none d-flex flex-column align-items-start justify-content-end">
+        <p class="bg-text mx-2">BUILT-IN AI & MARKETING TOOLS</p>
+        <p class="fs-4 ms-2">Websites</p>
+    </a>
+    <a href="#" class="down-to shadow-div text-decoration-none text-black d-flex align-items-end">
+        <p class="fs-4 ms-2">Email & Microsoft 365</p>
+    </a>
+</div>`;
     btns[0].classList.add('re-btn');
     btns[0].classList.remove('re-btn2');
     btns[1].classList.add('re-btn2');
@@ -253,6 +267,20 @@ btns[0].addEventListener('click', () => {
     btns[3].classList.add('re-btn2');
 });
 btns[1].addEventListener('click', () => {
+    const handle = document.getElementById('handle');
+    handle.innerHTML = `<a href="#" class="web shadow-div text-decoration-none text-black d-flex flex-column align-items-start justify-content-end">
+    <p class="bg-text mx-2">NO TECH SKILLS NEEDED</p>
+    <p class="fs-4 fw-bolder ms-2">Websites</p>
+</a>
+<div class="d-flex justify-content-between mt-1">
+    <a href="#"
+        class="down-to shadow-div text-black text-decoration-none d-flex align-items-end">
+        <p class="fs-4 ms-2">WordPress</p>
+    </a>
+    <a href="#" class="down-to shadow-div text-decoration-none text-black d-flex align-items-end">
+        <p class="fs-4 ms-2">Web Design Services</p>
+    </a>
+</div>`;
     btns[0].classList.add('re-btn2');
     btns[1].classList.add('re-btn');
     btns[1].classList.remove('re-btn2');
@@ -260,6 +288,20 @@ btns[1].addEventListener('click', () => {
     btns[3].classList.add('re-btn2');
 });
 btns[2].addEventListener('click', () => {
+    const handle = document.getElementById('handle');
+    handle.innerHTML = `<a href="#" class="security shadow-div text-decoration-none text-black d-flex flex-column align-items-start justify-content-end">
+    <p class="bg-text mx-2">ALL-IN-ONE</p>
+    <p class="fs-4 fw-bolder ms-2">SSL Security</p>
+</a>
+<div class="d-flex justify-content-between mt-1">
+    <a href="#"
+        class="down-to shadow-div text-black text-decoration-none d-flex align-items-end">
+        <p class="fs-4 ms-2">Web Hosting</p>
+    </a>
+    <a href="#" class="down-to shadow-div text-decoration-none text-black d-flex align-items-end">
+        <p class="fs-4 ms-2">WordPress</p>
+    </a>
+</div>`;
     btns[0].classList.add('re-btn2');
     btns[1].classList.add('re-btn2');
     btns[2].classList.add('re-btn');
@@ -267,6 +309,15 @@ btns[2].addEventListener('click', () => {
     btns[3].classList.add('re-btn2');
 });
 btns[3].addEventListener('click', () => {
+    const handle = document.getElementById('handle');
+    handle.innerHTML = `<a href="#" class="sell my-1 shadow-div text-decoration-none text-black d-flex flex-column align-items-start justify-content-end">
+    <p class="bg-text mx-2">LOWEST FEES</p>
+    <p class="fs-4 fw-bolder ms-2">Online Store</p>
+</a>
+<a href="#"
+    class="wordpress my-1 shadow-div text-black text-decoration-none d-flex align-items-end">
+    <p class="fs-4 fw-bolder ms-2">Managed WooCommerce Stores</p>
+</a>`;
     btns[0].classList.add('re-btn2');
     btns[1].classList.add('re-btn2');
     btns[2].classList.add('re-btn2');
