@@ -11,6 +11,7 @@ const commerceArrow = document.getElementById('commerce-arrow');
 const back = document.querySelectorAll('.odd');
 const btns = document.querySelectorAll('.btns');
 const back2 = document.querySelectorAll('.even');
+const steps = document.querySelectorAll('.steps');
 const search = document.getElementById('search');
 const closer = document.getElementById('closer');
 const input = document.getElementById('input');
@@ -323,4 +324,35 @@ btns[3].addEventListener('click', () => {
     btns[2].classList.add('re-btn2');
     btns[3].classList.add('re-btn');
     btns[3].classList.remove('re-btn2');
+});
+window.addEventListener('scroll', () => {
+    const scroller = document.getElementById('scroll');
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollTop = document.documentElement.scrollTop;
+    const clientHeight = document.documentElement.clientHeight;
+    if (scrollTop + clientHeight >= scrollHeight) {
+        scroller.classList.add('visible');
+        scroller.classList.remove('scrollers');
+    }
+});
+steps[0].addEventListener('mouseover', () => {
+    const img = document.querySelectorAll('.img');
+    img[0].classList.remove('d-none');
+    img[0].classList.add('hello');
+    img[1].classList.add('d-none');
+    img[2].classList.add('d-none');
+});
+steps[1].addEventListener('mouseover', () => {
+    const img = document.querySelectorAll('.img');
+    img[0].classList.add('d-none');
+    img[1].classList.remove('d-none');
+    img[1].classList.add('hello');
+    img[2].classList.add('d-none');
+});
+steps[2].addEventListener('mouseover', () => {
+    const img = document.querySelectorAll('.img');
+    img[0].classList.add('d-none');
+    img[1].classList.add('d-none');
+    img[2].classList.remove('d-none');
+    img[2].classList.add('hello');
 });
