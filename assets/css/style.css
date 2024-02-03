@@ -498,33 +498,10 @@
   display: none;
 }
 
-.scrollers {
-  display: none;
-  transform: translateY(200px);
-  opacity: 0;
-}
-
-.visible {
-  display: block;
-  animation: visible 1s 1 alternate ease-in-out;
-  transform: translateY(0px);
-  opacity: 1;
-}
-
 .hello {
   animation: hello 0.5s 1 alternate ease-in-out;
 }
 
-@keyframes visible {
-  0% {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 @keyframes hello {
   0% {
     opacity: 0.1;
