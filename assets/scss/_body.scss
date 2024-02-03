@@ -7,8 +7,33 @@
     display: none;
 }
 
+.scrollers {
+    display: none;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.visible {
+    display: block;
+    animation: visible 1s 1 alternate ease-in-out;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .hello {
     animation: hello 0.5s 1 alternate ease-in-out;
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 @keyframes hello {
@@ -27,9 +52,7 @@
 }
 
 .img2 {
-    width: 60vw;
     height: 40vh;
-    object-fit: cover;
 }
 
 
@@ -63,17 +86,5 @@
 
     .smaller {
         display: flex;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-
-        .carousel-item {
-            text-align: center;
-            flex: 0 0 auto;
-            margin-right: 1rem;
-            scroll-snap-align: start;
-            width: 100%;
-        }
     }
 }
