@@ -51,6 +51,13 @@
     width: 70vw;
 }
 
+.img2 {
+    width: 60vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
 .texts {
     color: #8f8f8f;
     transition: .5s;
@@ -80,6 +87,18 @@
     }
 
     .smaller {
-        display: block;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        .carousel-item {
+            text-align: center;
+            flex: 0 0 auto;
+            margin-right: 1rem;
+            scroll-snap-align: start;
+            width: 100%;
+        }
     }
 }

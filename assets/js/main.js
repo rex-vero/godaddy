@@ -330,7 +330,7 @@ window.addEventListener('scroll', () => {
     const scrollHeight = document.documentElement.scrollHeight;
     const scrollTop = document.documentElement.scrollTop;
     const clientHeight = document.documentElement.clientHeight;
-    if (scrollTop + clientHeight >= scrollHeight) {
+    if (scrollTop + clientHeight === scrollHeight) {
         scroller.classList.add('visible');
         scroller.classList.remove('scrollers');
     }
